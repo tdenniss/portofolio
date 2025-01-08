@@ -1,169 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teglas Dennis-Vladut - Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #121212;
-      color: #ffffff;
-    }
-    .navbar {
-      background-color: #1f1f1f;
-    }
-    .navbar-brand {
-      font-weight: bold;
-      font-size: 1.5rem;
-      color: #ffffff; /* Alb initial */
-      transition: color 0.3s ease-in-out;
-    }
-    .navbar-brand:hover {
-      color: #00aaff; /* Albastru la hover */
-    }
-    .navbar-nav .nav-link {
-      color: #ffffff;
-      transition: color 0.3s ease-in-out;
-    }
-    .navbar-nav .nav-link:hover {
-      color: #00aaff;
-    }
-    .name-title {
-      color: #00aaff; /* Albastru pentru numele tau */
-    }
-    .section-title {
-      color: #00aaff;
-      margin-bottom: 1rem;
-    }
-    .card {
-      background-color: #1f1f1f;
-      border: none;
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-      text-align: center;
-    }
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    }
-    .card-title {
-      color: #00aaff; /* Albastru pentru titlurile proiectelor */
-    }
-    .card-text {
-      color: #ffffff; /* Alb pentru descrierea proiectelor */
-    }
-    .card-text a {
-      color: #00aaff; /* Albastru pentru linkuri */
-    }
-    .btn-primary {
-      background-color: #00aaff;
-      border: none;
-      transition: background-color 0.3s ease-in-out;
-    }
-    .btn-primary:hover {
-      background-color: #0077cc;
-    }
-    footer {
-      background-color: #1f1f1f;
-    }
-  </style>
 </head>
+
 <body>
+  <app-navbar></app-navbar>
 
-<nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand" href="#">Teglas Dennis-Vladut</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <router-outlet></router-outlet>
 
-<section class="text-center py-5">
-  <div class="container">
-    <h1 class="display-4 name-title">Teglas Dennis-Vladut</h1>
-    <p class="lead">Student | Game Developer | Programmer</p>
-  </div>
-</section>
-
-<section id="about" class="py-5">
-  <div class="container">
-    <h2 class="section-title text-center">About Me</h2>
-    <p class="text-center">I am a third-year student at the Faculty of Mathematics and Computer Science at Transilvania University, Brasov. Passionate about programming and game development, I enjoy solving problems and learning new things.</p>
-  </div>
-</section>
-
-<section id="projects" class="py-5">
-  <div class="container">
-    <h2 class="section-title text-center">Projects</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="assets/voidblox.png" class="card-img-top" alt="Unity Game">
-          <div class="card-body">
-            <h5 class="card-title">Unity Game</h5>
-            <p class="card-text">A 3D platformer bullet hell game made in Unity. <a href="https://github.com/tdenniss/VoidBlox">In active development</a>.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="assets/gartic.png" class="card-img-top" alt="Gartic">
-          <div class="card-body">
-            <h5 class="card-title">Gartic</h5>
-            <p class="card-text">Cross-client drawing game built using Modern C++ with a custom GUI library. <a href="https://github.com/bugbstrs/gartic">GitHub</a>.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="assets/tancodrom.png" class="card-img-top" alt="OpenGL Tank Range">
-          <div class="card-body">
-            <h5 class="card-title">OpenGL Tank Range</h5>
-            <p class="card-text">A battlefield simulation built with OpenGL. <a href="https://github.com/bugbstrs/tancodrom">GitHub</a>.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card">
-          <img src="assets/logic gate.png" class="card-img-top" alt="Logic Gates">
-          <div class="card-body">
-            <h5 class="card-title">A Working Computer from Logic Gates</h5>
-            <p class="card-text">A project showcasing a working computer created entirely from logic gates. <a href="https://conferences.ulbsibiu.ro/icdd/2023/files/ICDD2023_Proceedings.pdf#page=226">Presentation</a>.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="py-5">
-  <div class="container">
-    <h2 class="section-title text-center">Contact</h2>
-    <div class="row">
-      <div class="col-md-6 mx-auto">
-        <ul class="list-unstyled text-center">
-          <li><strong>Location:</strong> Brașov, Strada Dorobanților nr.6</li>
-          <li><strong>Email:</strong> <a href="mailto:teglasdennis@gmail.com" class="text-primary">teglasdennis&#64;gmail.com</a></li>
-          <li><strong>Phone:</strong> 0729612280</li>
-          <li><strong>GitHub:</strong> <a href="https://github.com/tdenniss" class="text-primary">GitHub</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="text-center py-3">
-  <p>Copyright &copy; 2024 Teglas Dennis-Vladut</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <app-footer></app-footer>
 </body>
+
 </html>

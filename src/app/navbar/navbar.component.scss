@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #1f1f1f;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff;
+    /* Alb initial */
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: #00aaff;
+    /* Albastru la hover */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00aaff;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
