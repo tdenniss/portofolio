@@ -17,8 +17,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/portofolio",
-            "index": "src/index.html",
+            "outputPath": "dist",
+            "index": {
+              "input": "src/index.html",
+              "output": "404.html"
+            },
+            "deployUrl": "https://tdenniss.github.io/portofolio",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
