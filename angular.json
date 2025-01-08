@@ -22,7 +22,7 @@
               "input": "src/index.html",
               "output": "404.html"
             },
-            "deployUrl": "https://tdenniss.github.io/portofolio",
+            "baseHref": "https://tdennis.github.io/portofolio",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
