@@ -1,11 +1,20 @@
 body {
     background-color: #121212;
     color: #ffffff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .name-title {
     color: #00aaff;
-    /* Albastru pentru numele tau */
 }
 
 .section-title {
