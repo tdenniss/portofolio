@@ -1,8 +1,26 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+section {
+    min-height: 100vh;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+}
+
 .card {
     background-color: #1f1f1f;
     border: none;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
@@ -12,20 +30,52 @@
 
 .card-title {
     color: #00aaff;
-    /* Albastru pentru titlurile proiectelor */
 }
 
 .card-text {
     color: #ffffff;
-    /* Alb pentru descrierea proiectelor */
+    flex-grow: 1;
 }
 
-.card-text a {
+.badge {
+    &.bg-primary {
+        background-color: #007bff !important;
+    }
+    &.language-javascript {
+        background-color: #f7df1e !important;
+        color: #000 !important;
+    }
+    &.language-typescript {
+        background-color: #007acc !important;
+        color: #fff !important;
+    }
+    &.language-python {
+        background-color: #3776ab !important;
+        color: #fff !important;
+    }
+    &.language-csharp {
+        background-color: #68217a !important;
+        color: #fff !important;
+    }
+    &.language-html {
+        background-color: #e34c26 !important;
+        color: #fff !important;
+    }
+    &.language-css {
+        background-color: #563d7c !important;
+        color: #fff !important;
+    }
+    &.language-asp\.net {
+        background-color: #512bd4 !important;  // Microsoft purple
+        color: #fff !important;
+    }
+    &.language-c\+\+ {
+        background-color: #009c68 !important;  // C++ standard blue
+        color: #fff !important;
+    }
+}
+
+.section-title {
     color: #00aaff;
-    /* Albastru pentru linkuri */
-}
-
-body {
-    background-color: #121212;
-    color: #ffffff;
+    margin-bottom: 2rem;
 }
